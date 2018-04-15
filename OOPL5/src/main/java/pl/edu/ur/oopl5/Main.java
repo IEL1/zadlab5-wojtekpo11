@@ -2,6 +2,10 @@ package pl.edu.ur.oopl5;
 
 import java.util.Scanner;
 
+/**
+ *
+ * @author Wojciech
+ */
 public class Main {
 
     private static void zadanie3() {
@@ -17,6 +21,10 @@ public class Main {
         Firma company1 = new Firma();
         company1.menu();
     }
+    private static void zadanie6() {
+        Zad6 zad6 = new Zad6();
+        zad6.menu();
+    }
 
     public static void main(String[] args) {
 
@@ -26,6 +34,7 @@ public class Main {
         while (menu != 0) {
             System.out.println("3. Zadanie 3");
             System.out.println("5. Zadanie 5");
+            System.out.println("6. Zadanie 6");
             System.out.println("0. Wyjscie");
             menu = in.nextInt();
 
@@ -35,6 +44,9 @@ public class Main {
                     break;
                 case 5:
                     zadanie5();
+                    break;
+                case 6:
+                    zadanie6();
                     break;
                 case 0:
                     break;
